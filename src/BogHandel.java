@@ -8,18 +8,39 @@ public class BogHandel {
     public void flereBøgerKommetHjem(int antalBøgerKommetHjem, String bogNavn){
         if(bogNavn == "JHTP") {
             int nytAntalBøger = JHTP.getAntal() + antalBøgerKommetHjem;
-            JHTP.setAntal(nytAntalBøger);
-        } else if (bogNavn == "BJ2"){
+            if (antalBøgerKommetHjem >= 0) {
+                JHTP.setAntal(nytAntalBøger);
+                System.out.println("Antal af bøger fra bog: " + bogNavn + " er blevet opdateret. Nyt antal er " + nytAntalBøger);
+            } else {
+                System.out.println("Antallet af bøger der er kommet hjem skal være større end 0");
+            }
+        }
+        if(bogNavn == "BJ2"){
             int nytAntalBøger = BJ2.getAntal() + antalBøgerKommetHjem;
-            BJ2.setAntal(nytAntalBøger);
-        } else fail();
+            if(antalBøgerKommetHjem >= 0) {
+                BJ2.setAntal(nytAntalBøger);
+                System.out.println("Antal af bøger fra bog: " + bogNavn + " er blevet opdateret. Nyt antal er " + nytAntalBøger);
+            } else {
+                System.out.println("Antallet af bøger der er kommet hjem skal være større end 0");
+            }
+        }
 
     }
     public void nedsætPrisPåBog(double nyPris, String bogNavn){
         if(bogNavn == "JHTP") {
-            JHTP.setBogPris(nyPris);
+            if(nyPris >= 0) {
+                JHTP.setBogPris(nyPris);
+                System.out.println("Pris på " + bogNavn + " ændret til " + nyPris + ",- ddk.");
+            } else {
+                System.out.println("Den nye pris må ikke være negativ");
+            }
         } else if (bogNavn == "BJ2"){
-            BJ2.setBogPris(nyPris);
-        } else fail();
+            if(nyPris >= 0) {
+                BJ2.setBogPris(nyPris);
+                System.out.println("Pris på " + bogNavn + " ændret til " + nyPris + ",- ddk.");
+            } else {
+                System.out.println("Den nye pris må ikek være negativ");
+            }
+        }
     }
 }

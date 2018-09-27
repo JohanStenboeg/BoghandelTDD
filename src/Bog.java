@@ -10,6 +10,7 @@ public class Bog {
         this.bogTitle = bogTitle;
         this.bogForfatter = bogForfatter;
         this.bogPris = bogPris;
+        System.out.println("Ny bog oprettet ved navn " + bogTitle);
     }
 
     public void setAntal(int antal) {
