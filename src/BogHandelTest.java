@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class BogHandelTest {
@@ -35,13 +37,15 @@ public class BogHandelTest {
         int antalBJ2 = 3;
         assertEquals(antalBJ2, bogHandel.BJ2.getAntal());
     }
+
     @org.junit.Test
     public void tilføjAntalTilBog() {
         BogHandel bogHandel = new BogHandel();
-        bogHandel.flereBøgerKommetHjem(3);
+        bogHandel.flereBøgerKommetHjem(3, "JHTP");
         int antalJHTP = 11;
         assertEquals(antalJHTP, bogHandel.JHTP.getAntal());
     }
+
     @org.junit.Test
     public void nedsætPris() {
         BogHandel bogHandel = new BogHandel();
