@@ -15,7 +15,9 @@ public class BogHandelTest {
     public void getBogTitel() {
         BogHandel bogHandel = new BogHandel();
         String titelJHTP = "Java: how to program";
+        String titelBJ2 = "Beginning Java 2";
         assertEquals(titelJHTP, bogHandel.JHTP.getBogTitle());
+        assertEquals(titelBJ2, bogHandel.BJ2.getBogTitle());
     }
 
     @org.junit.Test
