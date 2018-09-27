@@ -12,6 +12,14 @@ public class Bog {
         this.bogPris = bogPris;
     }
 
+    public void setAntal(int antal) {
+        this.antal = antal;
+    }
+
+    public void setBogPris(double bogPris) {
+        this.bogPris = bogPris;
+    }
+
     public int getAntal() {
         return antal;
     }
