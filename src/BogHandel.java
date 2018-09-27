@@ -15,11 +15,11 @@ public class BogHandel {
         } else fail();
 
     }
-    public void nedsætPrisPåBog(int nyPris){
-
+    public void nedsætPrisPåBog(double nyPris, String bogNavn){
+        if(bogNavn == "JHTP") {
+            JHTP.setBogPris(nyPris);
+        } else if (bogNavn == "BJ2"){
+            BJ2.setBogPris(nyPris);
+        } else fail();
     }
-
-
-
-
 }

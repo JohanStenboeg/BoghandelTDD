@@ -52,8 +52,12 @@ public class BogHandelTest {
     @org.junit.Test
     public void nedsætPris() {
         BogHandel bogHandel = new BogHandel();
+        bogHandel.nedsætPrisPåBog(395, "BJ2");
+        bogHandel.nedsætPrisPåBog(650, "JHTP");
         double nyPrisBJ2 = 395.00;
+        double nyPrisJHTP = 650.00;
         assertEquals(nyPrisBJ2, bogHandel.BJ2.getBogPris(), 0.001);
+        assertEquals(nyPrisJHTP, bogHandel.JHTP.getBogPris(), 0.001);
     }
 
 }

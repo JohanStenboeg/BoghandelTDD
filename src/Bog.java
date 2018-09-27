@@ -16,8 +16,9 @@ public class Bog {
         this.antal = antal;
     }
 
-    public void setBogPris(double bogPris) {
+    public double setBogPris(double bogPris) {
         this.bogPris = bogPris;
+        return bogPris;
     }
 
     public int getAntal() {
