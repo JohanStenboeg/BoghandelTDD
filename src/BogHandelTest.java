@@ -6,7 +6,9 @@ public class BogHandelTest {
         BogHandel bogHandel = new BogHandel();
 
         double prisJHTP = 497;
+        double prisBJ2 = 495;
         assertEquals(prisJHTP, bogHandel.JHTP.getBogPris(), 0.001);
+        assertEquals(prisBJ2, bogHandel.BJ2.getBogPris(), 0.001);
     }
 
     @org.junit.Test
