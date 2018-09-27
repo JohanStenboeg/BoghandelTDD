@@ -12,23 +12,6 @@ public class Bog {
         this.bogPris = bogPris;
     }
 
-    public Bog(double bogPris) {
-        this.bogPris = bogPris;
-    }
-
-    public Bog(String bogTitle) {
-        this.bogTitle = bogTitle;
-    }
-
-    public Bog(int antal) {
-        this.antal = antal;
-    }
-
-    public Bog(String bogTitle, String bogForfatter) {
-        this.bogTitle = bogTitle;
-        this.bogForfatter = bogForfatter;
-    }
-
     public int getAntal() {
         return antal;
     }
@@ -45,3 +28,5 @@ public class Bog {
         return bogPris;
     }
 }
+
+
