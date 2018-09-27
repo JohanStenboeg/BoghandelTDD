@@ -5,29 +5,31 @@ public class BogHandelTest {
     public void getBogPris() {
         BogHandel bogHandel = new BogHandel();
 
-        double pris = 497;
-        assertEquals(pris, bogHandel.JHTP.getBogPris(), 0.001);
+        double prisJHTP = 497;
+        assertEquals(prisJHTP, bogHandel.JHTP.getBogPris(), 0.001);
     }
 
     @org.junit.Test
     public void getBogTitel() {
         BogHandel bogHandel = new BogHandel();
-        String titel = "Java: how to program";
-        assertEquals(titel, bogHandel.JHTP.getBogTitle());
+        String titelJHTP = "Java: how to program";
+        assertEquals(titelJHTP, bogHandel.JHTP.getBogTitle());
     }
 
     @org.junit.Test
     public void getBogForfattor() {
         BogHandel bogHandel = new BogHandel();
-        String forfatter = "Deitel & Deitel";
-        assertEquals(forfatter, bogHandel.JHTP.getBogForfatter());
+        String forfatterJHTP = "Deitel & Deitel";
+        assertEquals(forfatterJHTP, bogHandel.JHTP.getBogForfatter());
     }
 
     @org.junit.Test
     public void getBogAntal() {
         BogHandel bogHandel = new BogHandel();
-        int antal = 8;
-        assertEquals(antal, bogHandel.JHTP.getAntal());
+        int antalJHTP = 8;
+        assertEquals(antalJHTP, bogHandel.JHTP.getAntal());
     }
+
+
 }
 
