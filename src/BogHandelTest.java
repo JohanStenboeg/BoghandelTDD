@@ -14,12 +14,14 @@ public class BogHandelTest {
         String titel = "Java: how to program";
         assertEquals(titel, bogHandel.JHTP.getBogTitle());
     }
-    /*
+
     @org.junit.Test
-    public void getBogTitel(){
+    public void getBogForfattor(){
+        BogHandel bogHandel = new BogHandel();
         String forfatter = "Deitel & Deitel";
-        assertEquals(forfatter, bog.getAuthor(), 0.001);
+        assertEquals(forfatter, bogHandel.JHTP.getBogForfatter());
     }
+    /*
     @org.junit.Test
     public void getBogAntal(){
         int antal = 8;
