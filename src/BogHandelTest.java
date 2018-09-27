@@ -24,7 +24,8 @@ public class BogHandelTest {
     public void getBogForfattor() {
         BogHandel bogHandel = new BogHandel();
         String forfatterJHTP = "Deitel & Deitel";
-        assertEquals(forfatterJHTP, bogHandel.JHTP.getBogForfatter());
+        String forfatterBJ2 = "Ivor Horton";
+        assertEquals(forfatterBJ2, bogHandel.BJ2.getBogForfatter());
     }
 
     @org.junit.Test
