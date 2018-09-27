@@ -35,10 +35,7 @@ public class Bog {
     public double getBogPris() {
         return bogPris;
     }
-    public void flereBøgerKommetHjem(int antalBøgerKommetHjem){
-        int nytAntalBøger = getAntal() + antalBøgerKommetHjem;
-        setAntal(nytAntalBøger);
-    }
+
 
 
 }

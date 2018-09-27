@@ -38,8 +38,9 @@ public class BogHandelTest {
     @org.junit.Test
     public void tilføjAntalTilBog() {
         BogHandel bogHandel = new BogHandel();
+        bogHandel.flereBøgerKommetHjem(3);
         int antalJHTP = 11;
-        assertEquals(antalJHTP, bogHandel.BJ2.getAntal());
+        assertEquals(antalJHTP, bogHandel.JHTP.getAntal());
     }
     @org.junit.Test
     public void nedsætPris() {
