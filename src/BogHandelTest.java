@@ -11,6 +11,11 @@ public class BogHandelTest {
         String titel = "Kongen Af Java";
         assertEquals(titel, bog.getTitel(), 0.001);
     }
+    @org.junit.Test
+    public void getBogTitel(){
+        String forfatter = "Ikke Johan";
+        assertEquals(forfatter, bog.getAuthor(), 0.001);
+    }
 
 }
 
