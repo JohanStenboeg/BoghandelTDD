@@ -8,11 +8,13 @@ public class BogHandelTest {
         double pris = 497;
         assertEquals(pris, bogHandel.JHTP.getBogPris(),0.001);
     }
-    /*@org.junit.Test
+    @org.junit.Test
     public void getBogTitel(){
+        BogHandel bogHandel = new BogHandel();
         String titel = "Java: how to program";
-        assertEquals(titel, bog.getTitel(), 0.001);
+        assertEquals(titel, bogHandel.JHTP.getBogTitle());
     }
+    /*
     @org.junit.Test
     public void getBogTitel(){
         String forfatter = "Deitel & Deitel";
