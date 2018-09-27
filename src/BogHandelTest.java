@@ -35,7 +35,18 @@ public class BogHandelTest {
         int antalBJ2 = 3;
         assertEquals(antalBJ2, bogHandel.BJ2.getAntal());
     }
-
+    @org.junit.Test
+    public void tilføjAntalTilBog() {
+        BogHandel bogHandel = new BogHandel();
+        int antalJHTP = 11;
+        assertEquals(antalJHTP, bogHandel.BJ2.getAntal());
+    }
+    @org.junit.Test
+    public void nedsætPris() {
+        BogHandel bogHandel = new BogHandel();
+        double nyPrisBJ2 = 395.00;
+        assertEquals(nyPrisBJ2, bogHandel.BJ2.getBogPris(), 0.001);
+    }
 
 }
 
