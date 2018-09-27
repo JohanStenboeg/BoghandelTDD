@@ -32,7 +32,8 @@ public class BogHandelTest {
     public void getBogAntal() {
         BogHandel bogHandel = new BogHandel();
         int antalJHTP = 8;
-        assertEquals(antalJHTP, bogHandel.JHTP.getAntal());
+        int antalBJ2 = 3;
+        assertEquals(antalBJ2, bogHandel.BJ2.getAntal());
     }
 
 
